@@ -1,6 +1,6 @@
 import Footer from '../../Components/Footer/footer';
 import Header from '../../Components/Header/header';
-import './ListaPrGodutos.css'
+import './ListaProdutos.css'
 
 function ListaProdutos(){
     return(

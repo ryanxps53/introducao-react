@@ -1,12 +1,10 @@
 import './home.css'
 import imgBanner from '../../assets/img/jacquin_banner.png'
-import Header from '../../Components/Header/header'
-import Footer from '../../Components/Footer/footer'
 function home() {
 
   return (
     <>
-      <Header />
+  
       <main>
   <h1>página inicial bolos do Jacquin</h1>
   <section className="home_banner">
@@ -47,7 +45,7 @@ function home() {
       <hr />
     </div>
     <div className="container_categorias">
-      <a href="">
+      <a href="/">
         <div className="img_categoria1">
           <span>Momentos Inesquecíveis</span>
           <h3>Bolos de Festa</h3>
@@ -69,7 +67,6 @@ function home() {
   </section>
 </main>
 
-      <Footer />
     </>
   )
 }
