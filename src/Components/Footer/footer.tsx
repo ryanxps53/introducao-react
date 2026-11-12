@@ -8,8 +8,8 @@ function Footer() {
                 <img src={logo} alt=""/>
                     <span>© 2026 Bolos do Jacquin. A excelência da patisserie francesa.</span>
                     <nav>
-                        <a href="">Instagram</a>
-                        <a href="">Facebook</a>
+                        <a href="https:/www.instagram.com"target='_blank'>Instagram</a>
+                        <a href="https://www.facebook.com"target='_blank'>Facebook</a>
                     </nav>
             </div>
         </footer>

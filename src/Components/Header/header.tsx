@@ -1,7 +1,6 @@
 import './Header.css';
 import logo from '../../assets/img/logo.svg'
 import { Link } from 'react-router-dom';
-import Login from '../../pages/login/Login';
 
 function Header() {
 

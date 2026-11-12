@@ -1,11 +1,15 @@
-import Footer from '../../Components/Footer/footer';
-import Header from '../../Components/Header/header';
+
 import './ListaProdutos.css'
+import imgProduto from '../../assets/img/produtos/le_grand_chocolat.png'
+import user from "../../assets/icones/user.svg"
+import estrela from "../../assets/icones/star.svg"
+import { Link } from 'react-router-dom'
+import Card from '../../Components/card/Card'
 
 function ListaProdutos(){
     return(
         <>
-        <Header/>
+      
         <main>
   <section className="prod_banner" />
   <section className="container prod_container">
@@ -15,33 +19,17 @@ function ListaProdutos(){
       <hr />
     </div>
     <div className="prod_cards">
-      <article className="prod_card">
-        <figure>
-          <img
-            src="../img/produtos/le_grand_chocolat.png"
-            alt="foto do produto"
-            />
-        </figure>
-        <h2>
-          <a href="../detProduto/index.html">Le Grand Chocolat</a>
-        </h2>
-        <p className="card_desc">
-          Mousse de chocolate belga 70%, praliné de avelãs e biscuit de cacau.
-        </p>
-        <p className="card_rodape">
-          <data value={185.0}>R$ 185,00 / kg</data>
-          <span className="card_av">
-            <img src="../icones/user.svg" alt="icone de usuarios" />
-            <data value={10}>10</data>
-            <img src="../icones/star.svg" alt="icone de estrela" />
-            <data value="9.5">9,5</data>
-          </span>
-        </p>
-      </article>
+      <Card imgProduto={imgProduto}
+       nome={'Le Grand Chocolat'}
+        descricao={' Mousse de chocolate belga 70%, praliné de avelãs e biscuit de cacau.'}
+         valor={185.0}
+          quantidadeAvaliacoes={10}
+           nota={9.5}/>
+     
     </div>
   </section>
 </main>
-<Footer/>
+
             </>
     )
 }

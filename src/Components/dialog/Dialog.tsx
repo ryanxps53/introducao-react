@@ -26,7 +26,7 @@ return(
 
 <>
 
-<Modal show={mostrar} onHide={aoFechar}>
+<Modal show={mostrar} onHide={aoFechar} centered>
 
 <Modal.Header closeButton>
     <Modal.Title>{Title ? Title : "Texto padrão"}</Modal.Title>
