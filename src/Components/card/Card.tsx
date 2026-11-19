@@ -38,7 +38,7 @@ function Card({ imgProduto,
         {descricao}
       </p>
       <p className="card_rodape">
-        <data value={valor}> R${valor}</data>
+        <data value={valor}> R${valor} / kg</data>
         <span className="card_av">
           <img src={user} alt="icone de usuarios" />
           <data value={quantidadeAvaliacoes}>{quantidadeAvaliacoes}</data>

@@ -3,8 +3,8 @@ export type Produto = {
     nome: string;
     descricaoCurta: string;
     descricaoLonga: string;
-    precoporKg: number;
+    precoPorKg: number;
     ativo: boolean;
     imagem: string;
-    categoriaIDs:number;
+    categoriaIds:number[];
 }
