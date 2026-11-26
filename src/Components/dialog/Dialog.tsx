@@ -3,7 +3,7 @@ import './Dialog.css'
 import { Button, Modal, } from 'react-bootstrap'
 
 type DialogProps = {
-    Title:string;
+    title?:string;
     mostrar: boolean;
     mensagem: string;
     textoConfirmar: string;
@@ -12,7 +12,7 @@ type DialogProps = {
     aoConfirmar: () => void;
 }
 
-function Dialog({Title,
+function Dialog({title,
      mostrar,
       mensagem = "Essa é uma mensagem padrão",
        textoConfirmar = "Confirmar",
@@ -29,7 +29,7 @@ return(
 <Modal show={mostrar} onHide={aoFechar} centered>
 
 <Modal.Header closeButton>
-    <Modal.Title>{Title ? Title : "Texto padrão"}</Modal.Title>
+    <Modal.Title>{title ? title : "Texto padrão"}</Modal.Title>
 </Modal.Header>
 
 <Modal.Body>{mensagem}</Modal.Body>
